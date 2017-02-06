@@ -1,0 +1,21 @@
+@font-face {
+font-family: 'mt-shadow';
+font-style: normal;
+font-weight: normal;
+src: local('mt-shadow'), url('mt-shadow.ttf') format('truetype');
+}
+*{
+	font-size: 14px;
+	font-family:arial;
+	@include from(l){
+		font-size: 14px;
+	}
+}
+html, body{
+	margin:0;
+	padding:0;
+}
+.ed-container{
+	margin: 0;
+	max-width: 100%;
+}

@@ -1,0 +1,62 @@
+.contacto{
+  &-container{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: auto;
+    @include from(m){
+      margin-left: 15%;
+    }
+  }
+  &-columna{
+    &-item{
+      width: 80%;
+      text-align: center;
+      span{
+        font-size: 2em;
+        color: $rojo;
+      }
+      h4{
+        font-size: 1.5em;
+        color: $gris2;
+      }
+    }
+  }
+  &-formulario{
+      &-label, &-input{
+        display: block;
+        width: 70%;
+        margin-top: 1em;
+      }
+      &-label{
+        margin-left: 8%;
+        font-size: .8em;
+      }
+      &-input{
+        margin-left: 11%;
+        color:$gris1;
+        border: 1px solid $gris2;
+        padding: 5px 0 5px .5em;
+      }
+      &-msj{
+        font-size: .7em;
+        color:$gris2;
+        margin-left:11%;
+      }
+      &-btn{
+        width: 45%;
+        margin-left: 25%;
+        margin-top: 1em;
+        background-color: $rojo;
+        color: white;
+        padding: 5px 0 5px 0;
+        border: 1px solid $rojo;
+        &:hover{
+          background-color: rgba($rojo, 0.96);
+          cursor:pointer;
+        }
+      }
+      textarea{
+        height: 4em;
+      }
+  }
+}

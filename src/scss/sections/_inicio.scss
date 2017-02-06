@@ -1,0 +1,60 @@
+.inicio{
+  // padding-top: 1em;
+  &-info{
+    margin-top: 1em;
+    &-box{
+      border: 1px solid white;
+      color:white;
+      letter-spacing: 1px;
+      padding: 0;
+      @include to(m){
+        border-bottom: none;
+        &:last-child{
+          border-bottom: 1px solid white;
+        }
+      }
+      @include from(m){
+        padding-bottom: 5em;
+      }
+      .box-title{
+        width: 100%;
+        text-align: center;
+        font-size: 1.3em;
+        padding: .7em;
+        color:$gris1;
+        @include to(m){
+          background-color: $rojo;
+          color:white;
+          font-size: 1em;
+          margin: 0;
+        }
+        .arrow{
+          display: block;
+          @include showTo(m);
+        }
+      }
+      .box-container{
+        background-color: white;
+        color:$gris1;
+        .box-text{
+          padding-left: .8em;
+          padding-right: .8em;
+          text-align: justify;
+          @include from(m){
+            padding-left: 1em;
+            padding-right: 1em;
+          }
+          @include from(l){
+            padding-left: 3.5em;
+            padding-right: 3.5em;
+          }
+        }
+        .box-img{
+          width: 30%;
+          display: block;
+          margin: 1em auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.footer{
+  background-color: $gris1;
+  margin-top: 2em;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  color:white;
+  @include stickyFooter;
+  span{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: .3em;
+  }
+  &-logo{
+    @include from(m){
+      @include offset(10);
+    }
+    .logo{
+      font-size: 2em;
+    }
+    .text{
+      color:$gris2;
+    }
+    @include from(m){
+      span{
+        text-align: left;
+      }
+    }
+  }
+  &-contacto{
+    @include from(m){
+      padding-top:1em;
+    }
+    .correo, .telefono, .direccion{
+      font-size: 1.4em;
+      color:$amarillo;
+      width: 100%;
+      @include from(m){
+        text-align: right;
+      }
+    }
+    .direccion{
+      font-size: 1.2em;
+    }
+  }
+  &-copy{
+    @include from(m){
+      margin-top: 2em;
+    }
+    .copy{
+      font-size: .9em;
+      margin-top: .8em;
+      color:$gris2;
+    }
+    a{
+      text-decoration: none;
+      color:white;
+      padding-left: 2px;
+      color:$naranjo;
+    }
+  }
+}

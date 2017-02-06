@@ -1,0 +1,73 @@
+doctype html5
+html(lamg="es")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0")
+		link(rel="stylesheet", href="https://file.myfontastic.com/MrSNkKkth5JgMvHAsXPwSY/icons.css")
+		link(rel="stylesheet", href="css/main.css")
+		link(rel="stylesheet", href="bower_components/slider-pro/dist/css/slider-pro.min.css")
+		title Proyectos
+	body
+		header.menu
+			span.menu-logo SegPci
+			i.icon-bars#toogle-menu
+			nav.menu-nav.collapse
+				ul
+					li
+						a(href="index.html") Inicio
+					li
+						a(href="proyectos.html").selected Proyectos
+					li
+						a(href="servicios.html") Servicios
+					li
+						a(href="estudios.html") Estudios
+					li
+						a(href="contacto.html") Contacto
+					//- each item in ['Inicio', 'Proyectos', 'Servicios', 'Estudios', 'Contacto']
+					//- 	li: a(href=item+'.html')= item
+
+		.proyectos
+			.ed-container.section-header
+				.section-header-image
+				.section-header-title
+					h3 Nuestros Proyectos
+
+
+			.ed-container.servicios-container
+				.ed-item.s-100.m-50.servicios-container-services
+					i.icon-settings.services-icon
+					h2.services-title Proyectos de Ingenieria
+					p.services-text
+						| Lorem ipsum dolor sit amet, consectetur adipisicingjckcgcgjckgck elit,
+						| sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+						| minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						| consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+						| eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+						| qui officia deserunt mollit anim id est laborum.
+				.ed-item.s-100.m-50.servicios-container-services
+					i.icon-measure.services-icon
+					h2.services-title Ingenieria de Detalle
+					p.services-text
+						| Lorem ipsum dolor sit amet, consectetur adipisicingjckcgcgjckgck elit,
+						| sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+						| minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						| consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+						| eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+						| qui officia deserunt mollit anim id est laborum.
+
+		footer.footer
+			.ed-container
+				.ed-item.footer-logo.s-100.m-40
+					span.logo SegPci
+					span.text Integración y Montaje de equipos de Seguridad Electronica y Contra Incendio
+				.ed-item.footer-contacto.s-100.m-40
+					span.correo contacto@segpci.cl
+					span.telefono +569 9 814 5749
+					span.direccion El Carmen 1540 Torre 8, Of.101, Huechuraba
+				.ed-item.footer-copy.s-100
+					span.copy Desarrollado por
+						a(href="http://www.bitealo.cl") bitealo.cl
+
+
+		script(src="bower_components/jquery/dist/jquery.min.js")
+		script(src="js/app.js")

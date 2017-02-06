@@ -1,0 +1,23 @@
+// Colores
+$amarillo:#fe9700;
+$naranjo:#f57c00;
+$rojo:#b50d0a;
+$gris1:#202020;
+$gris2:#757575;
+
+//fuentes
+$roboto: 'Roboto', sans-serif;
+$shadow: 'mt-shadow';
+
+//mixins
+@mixin shadowBottom(){
+	box-shadow: 0px 1px 5px #888888;
+}
+
+@mixin dark(){
+	filter: url('#grayscale');
+		filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+		filter: Gray(); /* IE4-8 and 9 */
+
+		transition: all 0.3s ease;
+}

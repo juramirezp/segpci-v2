@@ -1,0 +1,77 @@
+doctype html5
+html(lamg="es")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0")
+		link(rel="stylesheet", href="https://file.myfontastic.com/MrSNkKkth5JgMvHAsXPwSY/icons.css")
+		link(rel="stylesheet", href="css/main.css")
+		link(rel="stylesheet", href="bower_components/slider-pro/dist/css/slider-pro.min.css")
+		title Contactanos
+	body
+		header.menu
+			span.menu-logo SegPci
+			i.icon-bars#toogle-menu
+			nav.menu-nav.collapse
+				ul
+					li
+						a(href="index.html") Inicio
+					li
+						a(href="proyectos.html") Proyectos
+					li
+						a(href="servicios.html") Servicios
+					li
+						a(href="estudios.html") Estudios
+					li
+						a(href="contacto.html").selected Contacto
+					//- each item in ['Inicio', 'Proyectos', 'Servicios', 'Estudios', 'Contacto']
+					//- 	li: a(href=item+'.html')= item
+
+		.contacto
+			.ed-container.section-header
+				.section-header-image
+				.section-header-title
+					h3 Contactanos
+
+
+			.ed-container.contacto-container
+				.ed-item.s-100.m-40.contacto-columna
+					form.contacto-formulario
+						label.contacto-formulario-label Nombre*
+						input.contacto-formulario-input(type="text" placeholder="Nombre" required)
+						label.contacto-formulario-label Email*
+						input.contacto-formulario-input(type="email" placeholder="Email" required)
+						label.contacto-formulario-label Teléfono
+						input.contacto-formulario-input(type="number" placeholder="Teléfono")
+						label.contacto-formulario-label Mensaje*
+						textarea.contacto-formulario-input(placeholder="Mensaje" required)
+						p.contacto-formulario-msj (*) Campos Obligatorios.
+						input.contacto-formulario-btn(type="submit" value="Enviar")
+
+				.ed-item.s-100.m-40.contacto-columna
+					.ed-item.contacto-columna-item.s-100
+						span.icon-phone
+						h4 +569 9 814 5749
+					.ed-item.contacto-columna-item.s-100
+						span.icon-map-marker
+						h4 El Carmen 1540 Torre 8, Of.101, Huechuraba
+					.ed-item.contacto-columna-item.s-100
+						span.icon-at
+						h4 hola@segpci.cl
+
+
+		footer.footer
+			.ed-container
+				.ed-item.footer-logo.s-100.m-40
+					span.logo SegPci
+					span.text Integración y Montaje de equipos de Seguridad Electronica y Contra Incendio
+				.ed-item.footer-contacto.s-100.m-40
+					span.correo contacto@segpci.cl
+					span.telefono +569 9 814 5749
+					span.direccion El Carmen 1540 Torre 8, Of.101, Huechuraba
+				.ed-item.footer-copy.s-100
+					span.copy Desarrollado por
+						a(href="http://www.bitealo.cl") bitealo.cl
+
+
+		script(src="bower_components/jquery/dist/jquery.min.js")
+		script(src="js/app.js")

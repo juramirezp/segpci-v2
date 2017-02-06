@@ -1,0 +1,86 @@
+.menu{
+  width: 100%;
+  height: 3.4em;
+  background-color: white;
+  @include shadowBottom();
+  &-logo{
+    font-family: $shadow;
+    font-weight: bold;
+    font-size:2em;
+    width: 90%;
+    position:absolute;
+    top:0;
+    left: 0;
+    padding: 5px;
+    @include from(m){
+      float: left;
+      margin-left: 1em;
+    }
+  }
+  &-nav{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top:3.3em;
+    z-index:2;
+    @include from(m){
+      display: block !important;
+      position: absolute;
+      top: 0;
+    }
+    ul{
+      padding: 0;
+      margin:0;
+      list-style: none;
+      background-color: white;
+      width: 100%;
+      box-shadow: 1px 0px 5px #888888;
+      @include from(m){
+        display: flex;
+        width: 60%;
+        position: absolute;
+        right: 0;
+        background-color: white;
+        box-shadow: none;
+      }
+      li{
+          flex: auto;
+          text-align: center;
+      }
+      a{
+        color:black;
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        // border-bottom:1px solid $gris2;
+        color:$gris1;
+        @include from(m){
+          color:$gris1;
+        }
+        &:hover{
+          background-color: $rojo;
+          color:white !important;
+
+        }
+      }
+    }
+  }
+}
+#toogle-menu{
+  font-size: 1.5em;
+  width: 10%;
+  position: absolute;
+  top: 15px;
+  right: 7px;
+  &:hover{
+    cursor: pointer;
+  }
+  @include from(m){
+    display:none;
+  }
+}
+.selected{
+  color:$rojo !important;
+  // font-weight: bold;
+  border-bottom: 2px solid $rojo;
+}
