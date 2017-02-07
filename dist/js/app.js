@@ -11,4 +11,6 @@ $(document).ready(function($) {
 			speed: 'fast'
 		});
 	}
+
+	$('.section-header-title').addClass('animated fadeInRight');
 });

@@ -8,29 +8,16 @@
   }
   &-title{
     background-color: $rojo;
-    width: 100%;
-    margin-left: -3em;
+    position: absolute;
+    top:0;
+    right: 0;
+    margin-top: 3.4em;
     color: white;
-    border: 1px solid $gris2;
 
-    -webkit-transform: skew(-40deg);
-     -moz-transform: skew(-40deg);
-     -ms-transform: skew(-40deg);
-     -o-transform: skew(-40deg);
-     transform: skew(-40deg);
-
-     @include from(m){
-       width: 70%;
-     }
      h3{
        font-size: 1.1em;
-       padding: .2em;
-       padding-left: 5em;
-      -webkit-transform: skew(40deg);
-      -moz-transform: skew(40deg);
-      -ms-transform: skew(40deg);
-      -o-transform: skew(40deg);
-      transform: skew(40deg);
+       padding-left: 2em;
+       padding-right: 2em;
 
       @include to(l){
         margin:.5em;
@@ -55,14 +42,14 @@
 
 .estudios{
   .section-header-image{
-    background: url('../img/fondo-estudios.jpg');
+    background: url('../img/planos.jpg');
     background-size: cover;
   }
 }
 
 .contacto{
   .section-header-image{
-    background: url('../img/fondo-contacto.jpg');
+    background: url('../img/5.jpg');
     background-size: cover;
   }
 }
@@ -72,5 +59,6 @@
     background: url('../img/fondo-contacto.jpg');
     background-size: cover;
     height: 50vh;
+    background-position: bottom;
   }
 }
