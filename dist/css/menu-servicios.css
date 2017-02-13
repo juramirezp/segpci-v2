@@ -1,0 +1,124 @@
+.jssort12 .w {
+    cursor: pointer;
+    position: absolute;
+    WIDTH: 99px;
+    HEIGHT: 28px;
+    border: 1px solid gray;
+    top: 0;
+    left: -1px
+}
+
+.jssort12 .p {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    padding: 0
+}
+
+.jssort12 .pav .w, .jssort12 .pdn .w {
+    border-bottom: 1px solid #fff
+}
+
+.jssort12 .c {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 28px;
+    text-align: center;
+    color: #000;
+    font-size: 13px
+}
+
+.jssort12 .p .c, .jssort12 .pav:hover .c {
+    background-color: #eee
+}
+
+.jssort12 .pav .c, .jssort12 .p:hover .c {
+    background-color: #fff
+}
+
+.menu-container {
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 700px;
+    height: 385px;
+    overflow: hidden;
+    visibility: hidden;
+    background-color: #ffffff;
+}
+
+.menu-cab1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.menu-cab2 {
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+    position: absolute;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-cab3 {
+    position: absolute;
+    display: block;
+    background: url('img/loading.gif') no-repeat center center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-slides {
+    cursor: default;
+    position: relative;
+    top: 29px;
+    left: 0px;
+    width: 100%;
+    height: 25em;
+    overflow: hidden;
+    text-align: center;
+}
+
+.menu-slide {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 0;
+}
+
+.menu-content {
+    margin: 10px;
+    overflow: hidden;
+    color: #000;
+}
+
+.menu-title {}
+
+.jssort12 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 500px;
+    height: 30px;
+}
+
+.jssort12 .u {
+    cursor: default;
+    top: 0px;
+    left: 0px;
+    border-left: 1px solid gray;
+}

@@ -16,4 +16,5 @@ $(document).ready(function($) {
 
 	$('.inicio-contenido').addClass('animated fadeInDown');
 	$('.inicio-campo').addClass('animated fadeInDown');
+
 });
