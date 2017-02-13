@@ -13,4 +13,7 @@ $(document).ready(function($) {
 	}
 
 	$('.section-header-title').addClass('animated fadeInRight');
+
+	$('.inicio-contenido').addClass('animated fadeInDown');
+	$('.inicio-campo').addClass('animated fadeInDown');
 });

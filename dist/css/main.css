@@ -3,7 +3,7 @@
   EDgrid es una librería CSS para construir layouts con Responsive Web Design
   Importe este archivo en su proyecto para empezar a usarlo
 **/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Gudea");
 /* line 2, node_modules/edgrid/components/_base.scss */
 *,
 *:before,
@@ -859,7 +859,7 @@ body.sticky-footer {
 /* line 7, src/scss/base.scss */
 * {
   font-size: 14px;
-  font-family: arial; }
+  font-family: "Gudea", sans-serif; }
   @media screen and (min-width: 1024px) {
     /* line 7, src/scss/base.scss */
     * {
@@ -1041,26 +1041,101 @@ html, body {
     color: #f57c00; }
 
 /* line 3, src/scss/sections/_inicio.scss */
+.inicio-campo {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 4; }
+  /* line 8, src/scss/sections/_inicio.scss */
+  .inicio-campo p {
+    width: 100%;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.1em; }
+
+/* line 17, src/scss/sections/_inicio.scss */
+.inicio-fondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/fono-inicio.jpg");
+  z-index: 0; }
+
+/* line 26, src/scss/sections/_inicio.scss */
+.inicio-capa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(32, 32, 32, 0.9);
+  z-index: 1; }
+
+/* line 35, src/scss/sections/_inicio.scss */
+.inicio-contenido {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 3.5em);
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding-top: 15%; }
+  /* line 46, src/scss/sections/_inicio.scss */
+  .inicio-contenido-logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 14em;
+    z-index: 2; }
+  /* line 53, src/scss/sections/_inicio.scss */
+  .inicio-contenido h4 {
+    font-size: 1.2em;
+    font-weight: 200;
+    margin: 0; }
+  /* line 58, src/scss/sections/_inicio.scss */
+  .inicio-contenido h2 {
+    font-family: "mt-shadow";
+    font-size: 3.5em;
+    margin: 0;
+    margin-bottom: 5px; }
+  /* line 64, src/scss/sections/_inicio.scss */
+  .inicio-contenido span {
+    position: absolute;
+    min-width: 30%;
+    margin-left: -15%;
+    height: 1px;
+    background-color: #fff; }
+  /* line 71, src/scss/sections/_inicio.scss */
+  .inicio-contenido h3 {
+    font-size: 1.5em;
+    font-weight: 200; }
+
+/* line 83, src/scss/sections/_inicio.scss */
 .inicio-info {
   margin-top: 1em; }
-  /* line 5, src/scss/sections/_inicio.scss */
+  /* line 85, src/scss/sections/_inicio.scss */
   .inicio-info-box {
     border: 1px solid white;
     color: white;
     letter-spacing: 1px;
     padding: 0; }
     @media screen and (max-width: 639px) {
-      /* line 5, src/scss/sections/_inicio.scss */
+      /* line 85, src/scss/sections/_inicio.scss */
       .inicio-info-box {
         border-bottom: none; }
-        /* line 12, src/scss/sections/_inicio.scss */
+        /* line 92, src/scss/sections/_inicio.scss */
         .inicio-info-box:last-child {
           border-bottom: 1px solid white; } }
     @media screen and (min-width: 640px) {
-      /* line 5, src/scss/sections/_inicio.scss */
+      /* line 85, src/scss/sections/_inicio.scss */
       .inicio-info-box {
         padding-bottom: 5em; } }
-    /* line 19, src/scss/sections/_inicio.scss */
+    /* line 99, src/scss/sections/_inicio.scss */
     .inicio-info-box .box-title {
       width: 100%;
       text-align: center;
@@ -1068,43 +1143,97 @@ html, body {
       padding: .7em;
       color: #202020; }
       @media screen and (max-width: 639px) {
-        /* line 19, src/scss/sections/_inicio.scss */
+        /* line 99, src/scss/sections/_inicio.scss */
         .inicio-info-box .box-title {
           background-color: #b50d0a;
           color: white;
           font-size: 1em;
           margin: 0; } }
-      /* line 31, src/scss/sections/_inicio.scss */
+      /* line 111, src/scss/sections/_inicio.scss */
       .inicio-info-box .box-title .arrow {
         display: block; }
         @media screen and (min-width: 640px) {
-          /* line 31, src/scss/sections/_inicio.scss */
+          /* line 111, src/scss/sections/_inicio.scss */
           .inicio-info-box .box-title .arrow {
             display: none; } }
-    /* line 36, src/scss/sections/_inicio.scss */
+    /* line 116, src/scss/sections/_inicio.scss */
     .inicio-info-box .box-container {
       background-color: white;
       color: #202020; }
-      /* line 39, src/scss/sections/_inicio.scss */
+      /* line 119, src/scss/sections/_inicio.scss */
       .inicio-info-box .box-container .box-text {
         padding-left: .8em;
         padding-right: .8em;
         text-align: justify; }
         @media screen and (min-width: 640px) {
-          /* line 39, src/scss/sections/_inicio.scss */
+          /* line 119, src/scss/sections/_inicio.scss */
           .inicio-info-box .box-container .box-text {
             padding-left: 1em;
             padding-right: 1em; } }
         @media screen and (min-width: 1024px) {
-          /* line 39, src/scss/sections/_inicio.scss */
+          /* line 119, src/scss/sections/_inicio.scss */
           .inicio-info-box .box-container .box-text {
             padding-left: 3.5em;
             padding-right: 3.5em; } }
-      /* line 52, src/scss/sections/_inicio.scss */
+      /* line 132, src/scss/sections/_inicio.scss */
       .inicio-info-box .box-container .box-img {
         width: 30%;
         display: block;
         margin: 1em auto; }
+
+/* line 143, src/scss/sections/_inicio.scss */
+.menu-inicio .selected {
+  color: white !important;
+  border-color: white !important; }
+
+/* line 148, src/scss/sections/_inicio.scss */
+.menu-inicio .menu-nav ul {
+  background: transparent;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4; }
+
+/* line 156, src/scss/sections/_inicio.scss */
+.menu-inicio .menu-nav ul li a {
+  color: white; }
+  /* line 158, src/scss/sections/_inicio.scss */
+  .menu-inicio .menu-nav ul li a:hover {
+    background-color: rgba(32, 32, 32, 0.9); }
+
+/* line 165, src/scss/sections/_inicio.scss */
+.menu-elementos-item a {
+  color: white;
+  text-decoration: none;
+  position: relative; }
+
+/* line 171, src/scss/sections/_inicio.scss */
+.menu-elementos-item a:hover {
+  color: grey; }
+
+/* line 175, src/scss/sections/_inicio.scss */
+.menu-elementos-item a:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+  width: 0;
+  height: 1px;
+  width: 60%;
+  background-color: white;
+  -webkit-animation: width 0.5s;
+  animation: width 0.5s;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 2px; }
+
+/* line 193, src/scss/sections/_inicio.scss */
+.menu-elementos-item a:hover:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1); }
 
 /* line 1, src/scss/sections/_estudios.scss */
 .estudios {
