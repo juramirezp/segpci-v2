@@ -5,6 +5,7 @@ const gulp = require('gulp'),
 	pug=require('gulp-pug'),
 	postcss=require('gulp-postcss'),
 	cssnano=require('cssnano');
+	stylus=require('gulp-stylus');
 
 //servidor
 gulp.task('serve', function(){
@@ -24,6 +25,14 @@ gulp.task('pug', ()=>
 			}))
 		.pipe(gulp.dest('./dist/'))
 );
+
+// Compilador Stylus
+gulp.task('stylus', function () {
+  return gulp.src('./src/stylus/*.styl')
+    .pipe(stylus())
+    .pipe(gulp.dest('./dist/css'))
+		.pipe(browserSync.stream())
+});
 
 //Compilador SASS
 gulp.task('sass', ()=>
@@ -45,6 +54,7 @@ gulp.task('sass', ()=>
 gulp.task('watch', function(){
 	gulp.watch('./src/scss/*.scss', ['sass'])
 	gulp.watch('./src/scss/sections/*.scss', ['sass'])
+	gulp.watch('./src/stylus/*.styl', ['stylus'])
 	gulp.watch('./src/views/*.pug', ['pug'])
 	gulp.watch('./dist/*.html').on('change', browserSync.reload)
 });

@@ -1,0 +1,83 @@
+doctype html5
+html(lamg="es")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0")
+		link(rel="stylesheet", href="https://file.myfontastic.com/MrSNkKkth5JgMvHAsXPwSY/icons.css")
+		link(rel="stylesheet", href="css/main.css")
+		link(rel="stylesheet", href="bower_components/animate.css/animate.min.css")
+		title Servicios
+	body
+		header.menu
+			span.menu-logo SegPci
+			i.icon-bars#toogle-menu
+			nav.menu-nav.collapse
+				ul
+					li
+						a(href="index.html") Inicio
+          li
+  						a(href="servicios.html").selected Nosotros
+					li
+						a(href="proyectos.html") Servicios
+					li
+						a(href="servicios.html") Proyectos
+					li
+						a(href="estudios.html") Estudios
+					li
+						a(href="contacto.html") Contacto
+					//- each item in ['Inicio', 'Proyectos', 'Servicios', 'Estudios', 'Contacto']
+					//- 	li: a(href=item+'.html')= item
+
+		.servicios
+			.ed-container.section-header
+				.section-header-image
+				.section-header-title
+					h3 Nuestros Servicios
+
+
+			.ed-container.servicios-container
+				.ed-item.s-100.m-30.servicios-container-services
+					i.icon-calculator.services-icon
+					h2.services-title Ingenieria Básica
+					p.services-text
+						| En la ingeniería básica quedarán definidos todos los
+						| requerimientos del cliente, como las especificaciones
+						| técnicas de los sistemas, el cronograma de ejecución y
+						| la valoración económica del proyecto.
+				.ed-item.s-100.m-30.servicios-container-services
+					i.icon-measure.services-icon
+					h2.services-title Ingenieria de Detalle
+					p.services-text
+						| Tomando como parámetros la ingeniería básica
+						| desarrollamos la información detallada para el
+						| correcto montaje y funcionamiento de los sistemas
+						| proyectados. Esta etapa da inicio a la realidad de
+						| las ideas conceptualizadas en etapas anteriores
+				.ed-item.s-100.m-30.servicios-container-services
+					i.icon-settings.services-icon
+					h2.services-title Ingenieria Conceptual
+					p.services-text
+						| Diseñamos ingenierías conceptuales para identificar la
+						| viabilidad técnica y económica del proyecto. Esta marcará
+						| la pauta para el desarrollo de la ingeniería básica y de
+						| detalle. Se basa en un estudio previo (estudio de viabilidad)
+						| y en la definición de los requerimientos del proyecto.
+				// contenido del tab de servicios
+		footer.footer
+			.ed-container
+				.ed-item.footer-logo.s-100.m-40
+					span.logo SegPci
+					span.text Integración y Montaje de equipos de Seguridad Electronica y Contra Incendio
+				.ed-item.footer-contacto.s-100.m-40
+					span.correo contacto@segpci.cl
+					span.telefono +569 9 814 5749
+					span.direccion El Carmen 1540 Torre 8, Of.101, Huechuraba
+				.ed-item.footer-copy.s-100
+					span.copy Desarrollado por
+						a(href="http://www.bitealo.cl") bitealo.cl
+
+
+		script(src="bower_components/jquery/dist/jquery.min.js")
+		script(src="https://use.typekit.net/vzf4zus.js")
+		script try{Typekit.load({ async: true });}catch(e){}
+		script(src="js/app.js")
