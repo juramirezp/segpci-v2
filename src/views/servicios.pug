@@ -1,81 +1,127 @@
-doctype html5
-html(lamg="es")
-	head
-		meta(charset="utf-8")
-		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0")
-		link(rel="stylesheet", href="https://file.myfontastic.com/MrSNkKkth5JgMvHAsXPwSY/icons.css")
-		link(rel="stylesheet", href="css/main.css")
-		link(rel="stylesheet", href="bower_components/animate.css/animate.min.css")
-		title Servicios
-	body
-		header.menu
-			span.menu-logo SegPci
-			i.icon-bars#toogle-menu
-			nav.menu-nav.collapse
-				ul
-					li
-						a(href="index.html") Inicio
-					li
-						a(href="proyectos.html") Proyectos
-					li
-						a(href="servicios.html").selected Servicios
-					li
-						a(href="estudios.html") Estudios
-					li
-						a(href="contacto.html") Contacto
-					//- each item in ['Inicio', 'Proyectos', 'Servicios', 'Estudios', 'Contacto']
-					//- 	li: a(href=item+'.html')= item
-
-		.servicios
-			.ed-container.section-header
-				.section-header-image
-				.section-header-title
-					h3 Nuestros Servicios
-
-
-			.ed-container.servicios-container
-				.ed-item.s-100.m-30.servicios-container-services
-					i.icon-calculator.services-icon
-					h2.services-title Ingenieria Básica
-					p.services-text
-						| En la ingeniería básica quedarán definidos todos los
-						| requerimientos del cliente, como las especificaciones
-						| técnicas de los sistemas, el cronograma de ejecución y
-						| la valoración económica del proyecto.
-				.ed-item.s-100.m-30.servicios-container-services
-					i.icon-measure.services-icon
-					h2.services-title Ingenieria de Detalle
-					p.services-text
-						| Tomando como parámetros la ingeniería básica
-						| desarrollamos la información detallada para el
-						| correcto montaje y funcionamiento de los sistemas
-						| proyectados. Esta etapa da inicio a la realidad de
-						| las ideas conceptualizadas en etapas anteriores
-				.ed-item.s-100.m-30.servicios-container-services
-					i.icon-settings.services-icon
-					h2.services-title Ingenieria Conceptual
-					p.services-text
-						| Diseñamos ingenierías conceptuales para identificar la
-						| viabilidad técnica y económica del proyecto. Esta marcará
-						| la pauta para el desarrollo de la ingeniería básica y de
-						| detalle. Se basa en un estudio previo (estudio de viabilidad)
-						| y en la definición de los requerimientos del proyecto.
-				// contenido del tab de servicios
-		footer.footer
-			.ed-container
-				.ed-item.footer-logo.s-100.m-40
-					span.logo SegPci
-					span.text Integración y Montaje de equipos de Seguridad Electronica y Contra Incendio
-				.ed-item.footer-contacto.s-100.m-40
-					span.correo contacto@segpci.cl
-					span.telefono +569 9 814 5749
-					span.direccion El Carmen 1540 Torre 8, Of.101, Huechuraba
-				.ed-item.footer-copy.s-100
-					span.copy Desarrollado por
-						a(href="http://www.bitealo.cl") bitealo.cl
-
-
-		script(src="bower_components/jquery/dist/jquery.min.js")
-		script(src="https://use.typekit.net/vzf4zus.js")
-		script try{Typekit.load({ async: true });}catch(e){}
-		script(src="js/app.js")
+doctype html
+html(lamg='es')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0')
+    link(rel='stylesheet', href='https://file.myfontastic.com/MrSNkKkth5JgMvHAsXPwSY/icons.css')
+    link(rel='stylesheet', href='css/menu-s.css')
+    // Resource style
+    script(src='js/modernizr.js')
+    // Modernizr
+    link(rel='stylesheet', href='css/main.css')
+    link(rel='stylesheet', href='bower_components/animate.css/animate.min.css')
+    title Servicios
+  body
+    header.menu
+      span.menu-logo SegPci
+      i#toogle-menu.icon-bars
+      nav.menu-nav.collapse
+        ul
+          li
+            a(href='index.html') Inicio
+          li
+            a(href='proyectos.html') Proyectos
+          li
+            a.selected(href='servicios.html') Servicios
+          li
+            a(href='estudios.html') Estudios
+          li
+            a(href='contacto.html') Contacto
+    .servicios
+      .ed-container.section-header
+        .section-header-image
+        .section-header-title
+          h3 Nuestros Servicios
+      .ed-container.servicios-container
+        .ed-item.s-100.m-30.servicios-container-services
+          i.icon-calculator.services-icon
+          h2.services-title Ingenieria Básica
+          p.services-text
+            | En la ingeniería básica quedarán definidos todos los
+            | requerimientos del cliente, como las especificaciones
+            | técnicas de los sistemas, el cronograma de ejecución y
+            | la valoración económica del proyecto.
+        .ed-item.s-100.m-30.servicios-container-services
+          i.icon-measure.services-icon
+          h2.services-title Ingenieria de Detalle
+          p.services-text
+            | Tomando como parámetros la ingeniería básica
+            | desarrollamos la información detallada para el
+            | correcto montaje y funcionamiento de los sistemas
+            | proyectados. Esta etapa da inicio a la realidad de
+            | las ideas conceptualizadas en etapas anteriores
+        .ed-item.s-100.m-30.servicios-container-services
+          i.icon-settings.services-icon
+          h2.services-title Ingenieria Conceptual
+          p.services-text
+            | Diseñamos ingenierías conceptuales para identificar la
+            | viabilidad técnica y económica del proyecto. Esta marcará
+            | la pauta para el desarrollo de la ingeniería básica y de
+            | detalle. Se basa en un estudio previo (estudio de viabilidad)
+            | y en la definición de los requerimientos del proyecto.
+    .cd-tabs
+      nav
+        ul.cd-tabs-navigation
+          li
+            a.selected-item(data-content='inbox', href='#0')
+              i.icon-fire
+              p.nav__label Sistema de Detección de y Alarmas de Incendio
+          li
+            a(data-content='new', href='#0')
+              i.icon-fire-extinguisher
+              p.nav__label Sistema de Extinción de Incendios
+          li
+            a(data-content='gallery', href='#0')
+              i.icon-eye
+              p.nav__label Circuito Cerrado de TV
+          li
+            a(data-content='store', href='#0')
+              i.icon-lock
+              p.nav__label Sistema de Control de Acceso
+          li
+            a(data-content='settings', href='#0')
+              i.icon-user-secret
+              p.nav__label Sistema de Alarmas de Intrusión
+        // cd-tabs-navigation
+      ul.cd-tabs-content
+        li.selected-item(data-content='inbox')
+          p
+            | Diseñamos sistemas teniendo por finalidad alertar de una emergencia al personal de la sala de seguridad de las dependencias junto con el envio de señales para una evacuación segura y ordenada.
+          p
+            | El Sistema de Detección y Alarmas de Incendios se conforma por dispositivos que alertan a una Central con Alarmas. Los equipos de campo serán detectores de humo, pulsadores manuales, luces estroboscópicas, sirenas y parlantes de audio evacuación, distribuidos de acuerdo a normativas vigentes.
+          p
+            | El sistema se diseñara teniendo como referencia las normas NFPA 72 y dando cumplimiento a las exigencias actuales de la Ordenanza General de Urbanismo y Construcciones (OGUC), normas, decretos y reglamentos nacionales.
+        li(data-content='new')
+          p
+            | Desarrollamos proyectos de Extinción de Incendios considerando mecanismos tanto automáticos como manuales, basado en extintores portátiles, red de mangueras contra incendio, bocas de conexión para bomberos apoyados por un sistema automáticos con sprinklers o gases dependiendo de las necesidades.
+          p
+            | Los sistemas de extinción manual son exigencia de las autoridades chilenas, y el sistema automático a base de sprinklers se presenta como el medio mas efectivo para controlar el fuego en este tipo de riesgos.
+          p
+            | El desarrollo del proyecto se hará en base a las normas NFPA desarrollasas en USA asi como también Normativa Nacional.
+        li(data-content='gallery')
+          p
+            | Diseñamos sistemas de Video vigilancia con el propósito de mejorar la eficiencia del personal de seguridad de manera tal que se pueda concentrar la vigilancia de varios puntos estratégicos en un solo lugar permitiendo revisar imágenes históricas en caso que alguna situación lo amerite. El objetivo es guardar registro de acontecimientos que puedan ocurrir en puntos estratégicos del recinto.
+        li(data-content='store')
+          p
+            | Nos encargamos de desarrollar un proyecto que permitirá controlar la entrada de personas a ciertas áreas consideradas como restringidas para todo público. Este generará un registro histórico de los accesos a estos lugares registrando además los intentos de ingreso sin éxito. Este sistema podrá definir para cada usuario horario de acceso a ciertos recintos, días de acceso como asi también prohibir el acceso a ciertos usuarios.
+        li(data-content='settings')
+          p
+            | Se contempla en este tipo de proyecto el diseño de un sistema de alarmas contra intrusión, por medio del monitoreo de áreas críticas donde es posible la intromisión.  Nos preocupamos de proteger tanto del  perímetro como en el  interior de los recintos. Los sensores podrán desactivarse por horarios, en forma parcial o total para permitir la operación segura y expedita del recinto.
+      // cd-tabs-content
+    // cd-tabs
+    footer.footer
+      .ed-container
+        .ed-item.footer-logo.s-100.m-40
+          span.logo SegPci
+          span.text Integración y Montaje de equipos de Seguridad Electronica y Contra Incendio
+        .ed-item.footer-contacto.s-100.m-40
+          span.correo contacto@segpci.cl
+          span.telefono +569 9 814 5749
+          span.direccion El Carmen 1540 Torre 8, Of.101, Huechuraba
+        .ed-item.footer-copy.s-100
+          span.copy
+            | Desarrollado por
+            a(href='http://www.bitealo.cl') bitealo.cl
+    script(src='bower_components/jquery/dist/jquery.min.js')
+    script(src='js/app.js')
+    script(src='js/main.js')

@@ -27,5 +27,8 @@
     "gulp-pug": "^3.2.0",
     "gulp-sass": "^3.0.0",
     "gulp-stylus": "^2.6.0"
+  },
+  "dependencies": {
+    "edgrid": "^2.0.1"
   }
 }
