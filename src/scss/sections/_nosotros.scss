@@ -1,0 +1,17 @@
+.nosotros{
+  &-container{
+    &-text{
+      padding-top: 5em;
+      padding-bottom: 5em;
+      p{
+        width: 80%;
+        @include from(l){
+          width: 60%;
+          text-align: justify;
+          margin-left: 20%;
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}

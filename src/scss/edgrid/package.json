@@ -1,0 +1,115 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "edgrid@^2.0.1",
+        "scope": null,
+        "escapedName": "edgrid",
+        "name": "edgrid",
+        "rawSpec": "^2.0.1",
+        "spec": ">=2.0.1 <3.0.0",
+        "type": "range"
+      },
+      "/Users/juanramirez/Documents/webs/segpci/segpci-v2"
+    ]
+  ],
+  "_from": "edgrid@>=2.0.1 <3.0.0",
+  "_id": "edgrid@2.0.1",
+  "_inCache": true,
+  "_location": "/edgrid",
+  "_nodeVersion": "6.3.0",
+  "_npmOperationalInternal": {
+    "host": "packages-18-east.internal.npmjs.com",
+    "tmp": "tmp/edgrid-2.0.1.tgz_1481488705486_0.88187171285972"
+  },
+  "_npmUser": {
+    "name": "francocorrea",
+    "email": "franco@francocorrea.com.uy"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "edgrid@^2.0.1",
+    "scope": null,
+    "escapedName": "edgrid",
+    "name": "edgrid",
+    "rawSpec": "^2.0.1",
+    "spec": ">=2.0.1 <3.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/edgrid/-/edgrid-2.0.1.tgz",
+  "_shasum": "d15a7d993c09e8316187024c276921ae07c6e89a",
+  "_shrinkwrap": null,
+  "_spec": "edgrid@^2.0.1",
+  "_where": "/Users/juanramirez/Documents/webs/segpci/segpci-v2",
+  "author": {
+    "name": "Alvaro Felipe",
+    "email": "informes@escueladigital.pe"
+  },
+  "bugs": {
+    "url": "https://github.com/escueladigital/ED-GRID/issues"
+  },
+  "contributors": [
+    {
+      "name": "Daniel Guillermo Romero Gelvez",
+      "email": "danielromeroauk@gmail.com",
+      "url": "http://adsiar.com"
+    },
+    {
+      "name": "Carlos Eduardo Cuatin Guaitarilla",
+      "email": "cecg1996@gmail.com",
+      "url": "http://carloscuatin.com"
+    }
+  ],
+  "dependencies": {},
+  "description": "Framework de CSS puro para crear diseños web responsive y mobile first.",
+  "devDependencies": {
+    "autoprefixer": "^6.4.1",
+    "babel-cli": "^6.16.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "babelify": "^7.3.0",
+    "browser-sync": "^2.16.0",
+    "browserify": "^13.1.1",
+    "cssnano": "^3.7.5",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "d15a7d993c09e8316187024c276921ae07c6e89a",
+    "tarball": "https://registry.npmjs.org/edgrid/-/edgrid-2.0.1.tgz"
+  },
+  "gitHead": "2a36ea4ac85dbf68aea00604a775a0d75c6f655c",
+  "homepage": "https://github.com/escueladigital/ED-GRID#readme",
+  "license": "ISC",
+  "main": "ed-grid.scss",
+  "maintainers": [
+    {
+      "name": "francocorrea",
+      "email": "franco@francocorrea.com.uy"
+    }
+  ],
+  "name": "edgrid",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/escueladigital/ED-GRID.git"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "style": "ed-grid.scss",
+  "version": "2.0.1"
+}
