@@ -14,7 +14,8 @@ $(document).ready(function($) {
 
 	$('.section-header-title').addClass('animated fadeInRight');
 
-	$('.inicio-contenido').addClass('animated fadeInDown');
+	$('.inicio-contenido').addClass('animated fadeIn');
 	$('.inicio-campo').addClass('animated fadeInDown');
+
 
 });

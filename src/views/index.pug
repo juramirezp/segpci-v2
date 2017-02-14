@@ -5,6 +5,7 @@ html(lamg="es")
 		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0")
 		link(rel="stylesheet", href="https://file.myfontastic.com/MrSNkKkth5JgMvHAsXPwSY/icons.css")
 		link(rel="stylesheet", href="css/main.css")
+		link(rel="stylesheet", href="bower_components/animate.css/animate.min.css")
 		title SegPci | Inicio
 	body
 		header.menu.menu-inicio
@@ -12,12 +13,12 @@ html(lamg="es")
 			i.icon-bars#toogle-menu
 			nav.menu-nav.collapse
 				ul
-					//- li.menu-elementos-item
-					//- 	a(href="index.html").selected Inicio
 					li.menu-elementos-item
-						a(href="proyectos.html") Proyectos
+						a(href="nosotros.html") Nosotros
 					li.menu-elementos-item
 						a(href="servicios.html") Servicios
+					li.menu-elementos-item
+						a(href="proyectos.html") Proyectos
 					li.menu-elementos-item
 						a(href="estudios.html") Estudios
 					li.menu-elementos-item
@@ -27,14 +28,14 @@ html(lamg="es")
 		.inicio
 			.inicio-fondo
 			.inicio-capa
-			.inicio-contenido.animated.fadeInDown
+			.inicio-contenido
 				img.inicio-contenido-logo(src="img/logso5.png")
-				h4 Bienvenidos a 
+				h4 Bienvenidos a
 				h2 SegPci
 				span.line
 				h3 Seguridad y Protección Contra Incendios
 			.inicio-campo
-				p 
+				p
 					| Área Minera e Industrial - Centros de Almacenamiento y Distribución - Edificios de Oficina - Habilitaciones de Oficina - Hoteles - Retail
 
 
@@ -91,5 +92,4 @@ html(lamg="es")
 
 
 		script(src="bower_components/jquery/dist/jquery.min.js")
-		script(src="js/jquery.simpleAccordion.js")
 		script(src="js/app.js")

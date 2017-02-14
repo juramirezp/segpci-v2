@@ -4,7 +4,7 @@ $cssHelpers : true;
 $devMode    : false;
 
 // Importacion del sistema de grillas
-@import "./node_modules/edgrid/ed-grid";
+@import "./edgrid/ed-grid";
 @import url('https://fonts.googleapis.com/css?family=Gudea');
 
 // importacion de variables y bases
@@ -16,6 +16,7 @@ $devMode    : false;
 @import "./sections/_footer";
 @import "./sections/_inicio";
 @import "./sections/_proyectos";
+@import "./sections/_nosotros";
 @import "./sections/_estudios";
 @import "./sections/_servicios";
 @import "./sections/_contacto";

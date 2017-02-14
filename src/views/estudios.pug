@@ -10,21 +10,21 @@ html(lamg="es")
 	body
 		header.menu
 			span.menu-logo SegPci
-			i.icon-bars#toogle-menu
+			i#toogle-menu.icon-bars
 			nav.menu-nav.collapse
 				ul
 					li
-						a(href="index.html") Inicio
+						a(href='index.html') Inicio
 					li
-						a(href="proyectos.html") Proyectos
+						a(href='nosotros.html') Nosotros
 					li
-						a(href="servicios.html") Servicios
+						a(href='servicios.html') Servicios
 					li
-						a(href="estudios.html").selected Estudios
+						a(href='proyectos.html') Proyectos
 					li
-						a(href="contacto.html") Contacto
-					//- each item in ['Inicio', 'Proyectos', 'Servicios', 'Estudios', 'Contacto']
-					//- 	li: a(href=item+'.html')= item
+						a(href='estudios.html').selected Estudios
+					li
+						a(href='contacto.html') Contacto
 
 		.estudios
 			.ed-container.section-header
@@ -36,7 +36,7 @@ html(lamg="es")
 				.ed-item-estudios-columna.s-100.m-35
 					i.icon-pencil-square-o.estudios-icono
 					p.estudios-parrafo
-						| Desarrollamos Estudios de Propuestas, cubicamos cada elemento para | que Usted pueda valorizar su obra. 
+						| Desarrollamos Estudios de Propuestas, cubicamos cada elemento para | que Usted pueda valorizar su obra.
 				.ed-item-estudios-columna.s-100.m-65
 					.tab
 						ul.tabs

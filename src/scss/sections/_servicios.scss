@@ -22,7 +22,7 @@
       }
       .services-title{
         @include toCenter('100%');
-        font-size: 1.6em;
+        font-size: 1.8em;
         letter-spacing: 1px;
       }
       .services-text{
@@ -30,6 +30,7 @@
         @include from(l){
           width: 100%;
           padding: 2em;
+          font-size: 1.2em;
         }
         @include from(xl){
           padding: 4em;

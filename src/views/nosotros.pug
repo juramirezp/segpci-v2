@@ -10,59 +10,47 @@ html(lamg="es")
 	body
 		header.menu
 			span.menu-logo SegPci
-			i.icon-bars#toogle-menu
+			i#toogle-menu.icon-bars
 			nav.menu-nav.collapse
 				ul
 					li
-						a(href="index.html") Inicio
-          li
-  						a(href="servicios.html").selected Nosotros
+						a(href='index.html') Inicio
 					li
-						a(href="proyectos.html") Servicios
+						a(href='nosotros.html').selected Nosotros
 					li
-						a(href="servicios.html") Proyectos
+						a(href='servicios.html') Servicios
 					li
-						a(href="estudios.html") Estudios
+						a(href='proyectos.html') Proyectos
 					li
-						a(href="contacto.html") Contacto
-					//- each item in ['Inicio', 'Proyectos', 'Servicios', 'Estudios', 'Contacto']
-					//- 	li: a(href=item+'.html')= item
+						a(href='estudios.html') Estudios
+					li
+						a(href='contacto.html') Contacto
 
-		.servicios
+		.nosotros
 			.ed-container.section-header
 				.section-header-image
 				.section-header-title
-					h3 Nuestros Servicios
+					h3 Nuestra Empresa
 
 
-			.ed-container.servicios-container
-				.ed-item.s-100.m-30.servicios-container-services
-					i.icon-calculator.services-icon
-					h2.services-title Ingenieria Básica
-					p.services-text
-						| En la ingeniería básica quedarán definidos todos los
-						| requerimientos del cliente, como las especificaciones
-						| técnicas de los sistemas, el cronograma de ejecución y
-						| la valoración económica del proyecto.
-				.ed-item.s-100.m-30.servicios-container-services
-					i.icon-measure.services-icon
-					h2.services-title Ingenieria de Detalle
-					p.services-text
-						| Tomando como parámetros la ingeniería básica
-						| desarrollamos la información detallada para el
-						| correcto montaje y funcionamiento de los sistemas
-						| proyectados. Esta etapa da inicio a la realidad de
-						| las ideas conceptualizadas en etapas anteriores
-				.ed-item.s-100.m-30.servicios-container-services
-					i.icon-settings.services-icon
-					h2.services-title Ingenieria Conceptual
-					p.services-text
-						| Diseñamos ingenierías conceptuales para identificar la
-						| viabilidad técnica y económica del proyecto. Esta marcará
-						| la pauta para el desarrollo de la ingeniería básica y de
-						| detalle. Se basa en un estudio previo (estudio de viabilidad)
-						| y en la definición de los requerimientos del proyecto.
-				// contenido del tab de servicios
+			.ed-container.nosotros-container
+				.ed-item.nosotros-container-text
+					p
+						| Nos es muy grato  presentarnos y darnos a conocer con Ustedes. Bienvenidos a nuestra plataforma virtual.
+					p
+						| Somos Rodrigo Azalgado y Raúl García, socios y fundadores de R.A&G, empresa dedicada al servicio de Integración y Montaje de equipos para proyectos de Seguridad Electrónica y Protección Contra Incendios.
+					p
+						| Contamos con 20 años de experiencia tanto en ingeniería como en montaje de sistemas. Experiencia que nos ha llevado a encontrar y hacernos acompañar por maño de obra de excelencia con sólidos conocimientos en sus especialidades.
+					p
+						| Promovemos el liderazgo en la prestación de nuestros servicios  para satisfacer las expectativas de nuestros clientes mediante un compromiso constante con los estándares de calidad, productividad y el mejoramiento continuo.
+					p
+						| Fomentamos un modelo de responsabilidad social y ambiental enfocados en la auto disciplina, protegiendo en todo momento la integridad de nuestros colaboradores como así también el medio ambiente.
+					p
+						| Mantenemos el aprendizaje y desarrollo de los integrantes y cumplimos con los requisitos legales junto a las normativas vigentes.
+					p
+						| Garantizamos el control de riesgo de humano y de sus instalaciones por medio de la implementación de nuestros servicios.
+
+
 		footer.footer
 			.ed-container
 				.ed-item.footer-logo.s-100.m-40
@@ -72,9 +60,9 @@ html(lamg="es")
 					span.correo contacto@segpci.cl
 					span.telefono +569 9 814 5749
 					span.direccion El Carmen 1540 Torre 8, Of.101, Huechuraba
-				.ed-item.footer-copy.s-100
-					span.copy Desarrollado por
-						a(href="http://www.bitealo.cl") bitealo.cl
+			.ed-item.footer-copy.s-100
+				span.copy Desarrollado por
+					a(href="http://www.bitealo.cl") bitealo.cl
 
 
 		script(src="bower_components/jquery/dist/jquery.min.js")
