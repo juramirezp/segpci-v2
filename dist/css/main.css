@@ -1040,6 +1040,8 @@ html, body {
 
 .estudios {
   min-height: 50vh; }
+  .estudios-columna {
+    padding-top: 3em; }
   .estudios-parrafo {
     width: 80%;
     margin-left: 20%;
@@ -1230,7 +1232,8 @@ html, body {
 
 .section-header {
   width: 100%;
-  top: 4.5em; }
+  top: 4.5em;
+  box-shadow: 1px 1px 5px 1px grey; }
   .section-header-image {
     height: 50vh;
     width: 100%; }
@@ -1259,15 +1262,21 @@ html, body {
   background-size: cover; }
 
 .estudios .section-header-image {
-  background: url("../img/planos.jpg");
-  background-size: cover; }
+  background: url("../img/arquitectos_planos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
 
 .contacto .section-header-image {
-  background: url("../img/5.jpg");
-  background-size: cover; }
+  background: url("../img/libreta_opt.jpg");
+  background-size: cover;
+  background-position: center; }
+  .contacto .section-header-image .capa {
+    width: 100%;
+    height: 100%; }
 
 .nosotros .section-header-image {
-  background: url("../img/5.jpg");
+  background: url("../img/regla_opt.jpg");
   background-size: cover; }
 
 .inicio .section-header-image {

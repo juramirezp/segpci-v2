@@ -2,6 +2,7 @@
   width:100%;
   // position:absolute;
   top:4.5em;
+  box-shadow: 1px 1px 5px 1px grey;
   &-image{
     height: 50vh;
     width: 100%;
@@ -42,21 +43,29 @@
 
 .estudios{
   .section-header-image{
-    background: url('../img/planos.jpg');
+    background: url('../img/arquitectos_planos.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 }
 
 .contacto{
   .section-header-image{
-    background: url('../img/5.jpg');
+    background: url('../img/libreta_opt.jpg');
     background-size: cover;
+    background-position: center;
+    .capa{
+      width: 100%;
+      height: 100%;
+
+    }
   }
 }
 
 .nosotros{
   .section-header-image{
-    background: url('../img/5.jpg');
+    background: url('../img/regla_opt.jpg');
     background-size: cover;
   }
 }
