@@ -1,27 +1,48 @@
 .estudios{
   min-height: 50vh;
+  &-container{
+    @include from(m){
+      margin-left: 10%;
+    }
+    @include from(xl){
+      margin-left: 15%;
+    }
+    margin-top: 3em;
+    padding-bottom: 5em;
+  }
   &-columna{
   	padding-top: 3em;
   }
-  &-parrafo{
-    width:80%;
-    margin-left: 20%;
-    padding-top: 1em;
-  }
-  &-icono{
+  &-icon{
     font-size: 3em;
-    width: 80%;
-    margin-left: 20%;
-    text-align: center;
-    display: block;
-    padding-top: 1em;
+    @include toCenter('20%');
+  }
+  &-title{
+    @include toCenter('100%');
+    font-size: 1.8em;
+    letter-spacing: 1px;
+  }
+  &-text{
+    text-align: justify;
+    @include from(l){
+      width: 100%;
+      padding: 2em;
+      font-size: 1.2em;
+      &:last-child{
+        padding-top: 0;
+      }
+    }
+    @include from(xl){
+      padding: 4em;
+    }
   }
   &-lista{
-    list-style: none;
     width: 90%;
+    margin-left: 1.8em;
     &-elemento{
       width: 49%;
       float: left;
+      font-size: 1.1em;
     }
   }
 }
@@ -34,15 +55,14 @@
 	position: relative;
 	overflow: hidden;
 	background: #fff;
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	line-height: 1.5;
 	font-weight: 300;
 	color: #888;
 	-webkit-font-smoothing: antialiased;
-  min-height: 90vh;
-  padding-bottom: 5em;
-  margin-left: 10%;
+  min-height: 50vh;
+  padding-bottom: 2em;
 }
 
 .tabs {

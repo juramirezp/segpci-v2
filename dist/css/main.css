@@ -839,7 +839,7 @@ html, body {
       padding-top: 1em; } }
   .footer-contacto .correo, .footer-contacto .telefono, .footer-contacto .direccion {
     font-size: 1.4em;
-    color: #fe9700;
+    color: #757575;
     width: 100%; }
     @media screen and (min-width: 640px) {
       .footer-contacto .correo, .footer-contacto .telefono, .footer-contacto .direccion {
@@ -1026,6 +1026,56 @@ html, body {
   -ms-transform: scaleX(1);
   transform: scaleX(1); }
 
+.proyectos-container {
+  margin-top: 6em;
+  padding-bottom: 5em; }
+  @media screen and (min-width: 640px) {
+    .proyectos-container {
+      margin-left: 10%; } }
+  @media screen and (min-width: 1440px) {
+    .proyectos-container {
+      margin-left: 20%; } }
+  .proyectos-container .proyects-icon {
+    font-size: 3em;
+    display: block;
+    width: "20%";
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  .proyectos-container .proyects-title {
+    display: block;
+    width: "100%";
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 1px; }
+  .proyectos-container .proyects-text {
+    text-align: justify; }
+    @media screen and (min-width: 1024px) {
+      .proyectos-container .proyects-text {
+        width: 100%;
+        padding: 2em;
+        font-size: 1.2em; }
+        .proyectos-container .proyects-text:last-child {
+          padding-top: 0; } }
+    @media screen and (min-width: 1440px) {
+      .proyectos-container .proyects-text {
+        padding: 4em; } }
+
+.proyectos #only-one {
+  margin-top: 3em;
+  border-radius: 20px; }
+  .proyectos #only-one .open button {
+    color: #b50d0a; }
+  .proyectos #only-one article article button {
+    color: white !important;
+    font-style: normal !important; }
+  .proyectos #only-one article article .open button {
+    font-style: italic !important; }
+  .proyectos #only-one .open .open {
+    color: white !important; }
+
 .nosotros-container-text {
   padding-top: 5em;
   padding-bottom: 5em; }
@@ -1040,25 +1090,51 @@ html, body {
 
 .estudios {
   min-height: 50vh; }
+  .estudios-container {
+    margin-top: 3em;
+    padding-bottom: 5em; }
+    @media screen and (min-width: 640px) {
+      .estudios-container {
+        margin-left: 10%; } }
+    @media screen and (min-width: 1440px) {
+      .estudios-container {
+        margin-left: 15%; } }
   .estudios-columna {
     padding-top: 3em; }
-  .estudios-parrafo {
-    width: 80%;
-    margin-left: 20%;
-    padding-top: 1em; }
-  .estudios-icono {
+  .estudios-icon {
     font-size: 3em;
-    width: 80%;
-    margin-left: 20%;
-    text-align: center;
     display: block;
-    padding-top: 1em; }
+    width: "20%";
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  .estudios-title {
+    display: block;
+    width: "100%";
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 1px; }
+  .estudios-text {
+    text-align: justify; }
+    @media screen and (min-width: 1024px) {
+      .estudios-text {
+        width: 100%;
+        padding: 2em;
+        font-size: 1.2em; }
+        .estudios-text:last-child {
+          padding-top: 0; } }
+    @media screen and (min-width: 1440px) {
+      .estudios-text {
+        padding: 4em; } }
   .estudios-lista {
-    list-style: none;
-    width: 90%; }
+    width: 90%;
+    margin-left: 1.8em; }
     .estudios-lista-elemento {
       width: 49%;
-      float: left; }
+      float: left;
+      font-size: 1.1em; }
 
 .tab {
   padding-top: 50px;
@@ -1066,15 +1142,14 @@ html, body {
   position: relative;
   overflow: hidden;
   background: #fff;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   line-height: 1.5;
   font-weight: 300;
   color: #888;
   -webkit-font-smoothing: antialiased;
-  min-height: 90vh;
-  padding-bottom: 5em;
-  margin-left: 10%; }
+  min-height: 50vh;
+  padding-bottom: 2em; }
 
 .tabs {
   display: table;
@@ -1207,8 +1282,9 @@ html, body {
 .contacto-formulario-input {
   margin-left: 11%;
   color: #202020;
-  border: 1px solid #757575;
-  padding: 5px 0 5px .5em; }
+  border: 2px solid #757575;
+  padding: 5px 0 5px .5em;
+  border-radius: 3px; }
 
 .contacto-formulario-msj {
   font-size: .7em;
@@ -1232,22 +1308,22 @@ html, body {
 
 .section-header {
   width: 100%;
-  top: 4.5em;
-  box-shadow: 1px 1px 5px 1px grey; }
+  box-shadow: 1px 1px 5px 1px grey;
+  position: relative; }
   .section-header-image {
     height: 50vh;
     width: 100%; }
   .section-header-title {
-    background-color: #b50d0a;
+    background-color: rgba(181, 13, 10, 0.83);
     position: absolute;
-    top: 0;
+    bottom: 0;
     right: 0;
-    margin-top: 4.5em;
     color: white; }
     .section-header-title h3 {
-      font-size: 1.1em;
+      font-size: 2.5em;
       padding-left: 2em;
-      padding-right: 2em; }
+      padding-right: 2em;
+      margin: .3em; }
       @media screen and (max-width: 1023px) {
         .section-header-title h3 {
           margin: .5em;
@@ -1262,7 +1338,7 @@ html, body {
   background-size: cover; }
 
 .estudios .section-header-image {
-  background: url("../img/arquitectos_planos.jpg");
+  background: url("../img/2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom; }

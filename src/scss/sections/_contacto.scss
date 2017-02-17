@@ -34,8 +34,9 @@
       &-input{
         margin-left: 11%;
         color:$gris1;
-        border: 1px solid $gris2;
+        border: 2px solid $gris2;
         padding: 5px 0 5px .5em;
+        border-radius: 3px;
       }
       &-msj{
         font-size: .7em;

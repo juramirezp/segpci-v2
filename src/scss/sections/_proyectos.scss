@@ -1,0 +1,56 @@
+.proyectos{
+
+  &-container{
+    @include from(m){
+      margin-left: 10%;
+    }
+    @include from(xl){
+      margin-left: 20%;
+    }
+    margin-top: 6em;
+    padding-bottom: 5em;
+    .proyects{
+      &-icon{
+        font-size: 3em;
+        @include toCenter('20%');
+      }
+      &-title{
+        @include toCenter('100%');
+        font-size: 1.8em;
+        letter-spacing: 1px;
+      }
+      &-text{
+        text-align: justify;
+        @include from(l){
+          width: 100%;
+          padding: 2em;
+          font-size: 1.2em;
+          &:last-child{
+            padding-top: 0;
+          }
+        }
+        @include from(xl){
+          padding: 4em;
+        }
+      }
+    }
+  }
+  #only-one{
+    margin-top: 3em;
+    border-radius: 20px;
+    .open button{
+      color:#b50d0a;
+    }
+    article article button{
+      color: white !important;
+      font-style: normal !important;
+    }
+    article article .open button{
+      font-style:italic !important;
+    }
+    .open .open{
+      color:white !important;
+
+    }
+  }
+}

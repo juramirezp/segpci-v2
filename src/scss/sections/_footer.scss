@@ -33,7 +33,7 @@
     }
     .correo, .telefono, .direccion{
       font-size: 1.4em;
-      color:$amarillo;
+      color:$gris2;
       width: 100%;
       @include from(m){
         text-align: right;
