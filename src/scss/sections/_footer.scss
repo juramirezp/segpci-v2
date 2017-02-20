@@ -1,5 +1,5 @@
 .footer{
-  background-color: $gris1;
+  background-color: $gris2;
   margin-top: 2em;
   padding-top: 1em;
   padding-bottom: .5em;
@@ -16,7 +16,7 @@
       @include offset(10);
     }
     .logo{
-      font-size: 2em;
+      width: 14em;
     }
     .text{
       color:$gris2;
@@ -33,7 +33,7 @@
     }
     .correo, .telefono, .direccion{
       font-size: 1.4em;
-      color:$gris2;
+      color:$gris1;
       width: 100%;
       @include from(m){
         text-align: right;
@@ -50,7 +50,7 @@
     .copy{
       font-size: .9em;
       margin-top: .8em;
-      color:$gris2;
+      color:$gris1;
     }
     a{
       text-decoration: none;
