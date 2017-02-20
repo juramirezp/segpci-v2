@@ -31,9 +31,18 @@
           width: 100%;
           padding: 2em;
           font-size: 1.2em;
+          padding-bottom: 0;
         }
         @include from(xl){
           padding: 4em;
+        }
+      }
+      ul{
+        padding: 2em;
+        padding-left: calc(2em + 22px);
+        padding-top: .5em;
+        li{
+          font-size: 1.2em;
         }
       }
     }

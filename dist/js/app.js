@@ -3,18 +3,13 @@ $(document).ready(function($) {
 		$('.menu-nav').slideToggle('slow');
 	});
 
-	var ventana_ancho = $(window).width();
-	if(ventana_ancho<640){
-		$('#accordion').simpleAccordion({
-			header: ".box-title",
-			collapsable: ".box-container",
-			speed: 'fast'
-		});
-	}
 
+	$('.section-header-title').css('display', 'inline');
 	$('.section-header-title').addClass('animated fadeInRight');
 
-	$('.inicio-contenido').addClass('animated fadeIn');
+	$('.inicio-contenido img').css('display','inline');
+	$('.inicio-contenido img').addClass('animated zoomIn');
+	$('.inicio-campo').css('display','inline');
 	$('.inicio-campo').addClass('animated fadeInDown');
 
 

@@ -15,33 +15,28 @@ button {
 
 
 [data-accordion]{
-  background-color: rgba(#b9b9b9, 0.81);
-  color: #757575;
+  background-color: #820806;
+  color: #fff;
   font-size: 1.2em;
-  border-bottom: solid 1px #b50d0a;
-  border-left: solid 1px #fff;
-  border-right: solid 1px #fff;
+  /*border-bottom: solid 1px #b50d0a;*/
 }
 [data-accordion]:last-child{
-  border-bottom: solid 1px #fff;
+  /*border-bottom: solid 1px #fff;*/
 }
 [data-accordion] [data-accordion]{
-  background-color: #757575;
+  background-color: #B50B08;
   color:white !important;
-
-  /*border-top: solid 1px white !important;
-  border-left: solid 1px white !important;
-  border-right: solid 1px white !important;*/
+  /*border-bottom:solid 1px #C21E1E !important;*/
 }
 
 [data-accordion] [data-content] {
-    background: rgb(255, 255, 255);
+    background: #C21E1E;
     color: black;
 }
 
 [data-accordion] [data-content] [data-content] {
-    background: rgb(255, 255, 255);
-    color: black;
+    background: #C21E1E;
+    color: white;
 }
 
 [data-accordion] [data-content] [data-content] [data-content] {

@@ -24,16 +24,18 @@
   }
   &-text{
     text-align: justify;
+    margin: 0;
+    &:first-child{
+      margin-top: 2em;
+    }
     @include from(l){
       width: 100%;
-      padding: 2em;
+      padding-top: .5em;
+      padding-bottom: .5em;
       font-size: 1.2em;
       &:last-child{
         padding-top: 0;
       }
-    }
-    @include from(xl){
-      padding: 4em;
     }
   }
   &-lista{
@@ -43,6 +45,7 @@
       width: 49%;
       float: left;
       font-size: 1.1em;
+      color: black;
     }
   }
 }
@@ -61,7 +64,7 @@
 	font-weight: 300;
 	color: #888;
 	-webkit-font-smoothing: antialiased;
-  min-height: 50vh;
+  min-height: 55vh;
   padding-bottom: 2em;
 }
 
